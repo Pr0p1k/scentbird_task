@@ -1,0 +1,9 @@
+version: 2
+
+# Keep the alphabetic order
+sources:
+  - name: public_exercises
+    database: postgres
+    schema: public_exercises
+    tables:      
+      - name: orders
