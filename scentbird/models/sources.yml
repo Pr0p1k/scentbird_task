@@ -7,3 +7,4 @@ sources:
     schema: public_exercises
     tables:      
       - name: orders
+      - name: events
