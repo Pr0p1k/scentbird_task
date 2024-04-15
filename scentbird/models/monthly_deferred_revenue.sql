@@ -10,7 +10,8 @@ SELECT
     shipped_at
 FROM {{ source('public_exercises', 'orders') }})
 SELECT
-    date_part('month', created_at)  || '/' || date_part('year', created_at) AS report_date,
+    DATE_TRUNC('month', created_at) AS report_date,
     SUM(amount) AS total_amount
 FROM nullified_amounts
-    GROUP BY date_part('year', created_at), date_part('month', created_at)
+    GROUP BY date_trunc('month', created_at)
+    ORDER BY date_trunc('month', created_at)

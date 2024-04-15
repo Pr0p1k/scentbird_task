@@ -1,3 +1,6 @@
 dbt-postgres==1.5.1
 jupyter==1.0.0
 python-language-server==0.36.2
+sqlalchemy==2.0.29
+pandas==2.2.1
+matplotlib==3.8.3

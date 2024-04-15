@@ -15,4 +15,6 @@ COPY . /app/task
 
 WORKDIR /app/task/scentbird
 
-CMD ["dbt", "--debug", "build"]
+EXPOSE 8888
+
+CMD ["bash", "-c", "dbt build && jupyter notebook --allow-root --ServerApp.ip='0.0.0.0' --no-browser"]
