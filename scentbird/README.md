@@ -1,15 +1,11 @@
-Welcome to your new dbt project!
+# Scentbird test task
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Run
+- build docker image
+- run docker container with ENV:
+  - POSTGRES_HOST
+  - POSTGRES_USER
+  - POSTGRES_PASSWORD
+- open Jupyter UI from the link in the container logs:
+  ![jupyter](jupyter-logs.png)
+- Open *Scentbird_reports.ipynb* from the project root
